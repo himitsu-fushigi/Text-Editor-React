@@ -4,9 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// @dev cont3xt api
+import DataLayer from './ContextApi/DataLayer';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DataLayer>
+      <App />
+    </DataLayer>
   </React.StrictMode>,
   document.getElementById('root')
 );
