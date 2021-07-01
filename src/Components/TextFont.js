@@ -11,7 +11,7 @@ export default function TextFont() {
       <select>
           {
               fontSizes?.map(size => (
-                <option value={size}>{size}</option>
+                <option key={size} value={size}>{size}</option>
               ))
           }
       </select>
@@ -19,8 +19,8 @@ export default function TextFont() {
       {/* @dev font families */}
       <select style={{marginLeft: "15px"}}>
           {
-              fontFamilies?.map(size => (
-                <option value={size}>{size}</option>
+              fontFamilies?.map(family => (
+                <option key={family} value={family}>{family}</option>
               ))
           }
       </select>
